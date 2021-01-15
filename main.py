@@ -138,8 +138,7 @@ class Instabot():
                 
 
 
-bot = Instabot("stream_gaming_setups", "!Owned9133")
-
+bot = Instabot("Username" , " Password")
 
 if bot.login() == True:
     if bot.SearchHashtag('#coding') == True:
