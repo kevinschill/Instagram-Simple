@@ -125,13 +125,20 @@ class Instabot():
         if photos_on_page != False:
             for photo in photos_on_page:
                 photo.click()
-                time.sleep(2)
+                time.sleep(random.randint(1,5))
                 
                 self.Like()
                 
                 time.sleep(random.randint(2,10))
+
                 self.Comment()
+
                 time.sleep(random.randint(2,6))
+
+                self.FollowProfile()
+
+                time.sleep(random.randint(2,10))
+
                 self.ClosePopupPhotoWindow()
 
                 time.sleep(random.randint(10,30))
